@@ -20,9 +20,10 @@
 | **Command** | `tars` |
 | **Platform** | macOS - Apple Silicon + Intel |
 | **Stack** | Go · Bubble Tea · Lip Gloss · SQLite |
-| **License** | OSI-approved *(to be selected)* |
+| **License** | [MIT](LICENSE) |
+| **Min macOS** | macOS 13 Ventura+ |
 | **Cost** | Free, forever |
-| **Status** | Planning - not yet implemented |
+| **Status** | Phase 0 complete — prototype next |
 
 ---
 
@@ -30,7 +31,7 @@
 
 | Phase | What it delivers | Status |
 |---|---|---|
-| **0 · Prototype** | Interactive UI prototype with sample data; name/license decisions | `Planned` |
+| **0 · Prototype** | Interactive UI prototype with sample data; name/license decisions | `Done` |
 | **1 · Explorer** | Real scan, disk usage, large-files view, Finder integration | `Planned` |
 | **2 · Explanations** | App recognition, friendly item descriptions, read-only suggestions | `Planned` |
 | **3 · History** | Opt-in SQLite scan history, growth tracking between scans | `Planned` |
@@ -68,4 +69,4 @@ Windows/Linux · antivirus · general app uninstaller · health scores · automa
 
 ---
 
-*TARS is in the planning phase. Implementation has not started.*
+*Phase 0 (product definition) is complete. See [Docs/Decisions.md](Docs/Decisions.md) for all resolved decisions.*
