@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+  <defs>
+    <!-- Only the upper arc (ring behind sphere) -->
+    <clipPath id="ring-back">
+      <rect x="0" y="0" width="100" height="50"/>
+    </clipPath>
+    <!-- Only the lower arc (ring in front of sphere) -->
+    <clipPath id="ring-front">
+      <rect x="0" y="50" width="100" height="50"/>
+    </clipPath>
+    <!-- Clip tree to sphere interior -->
+    <clipPath id="sphere-mask">
+      <circle cx="50" cy="50" r="21"/>
+    </clipPath>
+  </defs>
+
+  <!-- ── Back ring tracks (appear behind sphere) ── -->
+  <ellipse cx="50" cy="54" rx="46" ry="13" stroke-width="2"   opacity="0.30" clip-path="url(#ring-back)"/>
+  <ellipse cx="50" cy="54" rx="38" ry="10.5" stroke-width="1.2" opacity="0.20" clip-path="url(#ring-back)"/>
+
+  <!-- ── Sphere ── -->
+  <circle cx="50" cy="50" r="21" stroke-width="2.2"/>
+
+  <!-- ── Folder tree (directory hierarchy) inside sphere ── -->
+  <g clip-path="url(#sphere-mask)" stroke-width="1.4" opacity="0.75">
+    <!-- trunk -->
+    <line x1="50" y1="38" x2="50" y2="50"/>
+    <circle cx="50" cy="37" r="1.8" fill="currentColor" stroke="none"/>
+    <!-- left branch -->
+    <line x1="50" y1="44" x2="41" y2="52"/>
+    <circle cx="40" cy="53" r="1.6" fill="currentColor" stroke="none"/>
+    <!-- right branch -->
+    <line x1="50" y1="44" x2="59" y2="52"/>
+    <circle cx="60" cy="53" r="1.6" fill="currentColor" stroke="none"/>
+    <!-- left sub-branches -->
+    <line x1="41" y1="52" x2="37" y2="58"/>
+    <circle cx="36.5" cy="59" r="1.3" fill="currentColor" stroke="none"/>
+    <line x1="41" y1="52" x2="45" y2="58"/>
+    <circle cx="45.5" cy="59" r="1.3" fill="currentColor" stroke="none"/>
+    <!-- right sub-branches -->
+    <line x1="59" y1="52" x2="55" y2="58"/>
+    <circle cx="54.5" cy="59" r="1.3" fill="currentColor" stroke="none"/>
+    <line x1="59" y1="52" x2="63" y2="58"/>
+    <circle cx="63.5" cy="59" r="1.3" fill="currentColor" stroke="none"/>
+  </g>
+
+  <!-- ── Front ring tracks (appear in front of sphere) ── -->
+  <ellipse cx="50" cy="54" rx="46" ry="13"   stroke-width="2.8" clip-path="url(#ring-front)"/>
+  <ellipse cx="50" cy="54" rx="38" ry="10.5" stroke-width="1.8" opacity="0.60" clip-path="url(#ring-front)"/>
+  <ellipse cx="50" cy="54" rx="30" ry="8"    stroke-width="1.1" opacity="0.35" clip-path="url(#ring-front)"/>
+</svg>
