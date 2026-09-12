@@ -30,13 +30,13 @@
 
 ## 2. Minimum macOS → macOS 13 Ventura (2022)
 
-- Go 1.22+ supports macOS 11+, so no toolchain constraint
-- Drops Intel Macs older than 2017, covers ~95% of active users
+- Phase 1 is pinned to Go 1.27.1; Go 1.27 requires macOS 13+, exactly matching the selected support floor
+- Supports Intel and Apple Silicon systems capable of running macOS 13; validate both architectures rather than claiming an unverified adoption percentage
 - **Test matrix:**
 
 | Axis | Values |
 |---|---|
-| macOS version | 13 Ventura, latest (currently 15 Sequoia) |
+| macOS version | 13 Ventura, latest stable at validation time |
 | Architecture | Apple Silicon (`arm64`), Intel (`amd64`) |
 | Terminal | Terminal.app, iTerm2 |
 
@@ -46,7 +46,7 @@
 
 - No elevated permissions needed
 - Matches the nontechnical user target audience
-- Broader scans can come later via explicit opt-in (e.g., `tars --scope /`)
+- Broader scans are explicit opt-in through the Phase 1 root override (for example, `tars --root /`)
 
 ---
 

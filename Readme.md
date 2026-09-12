@@ -20,7 +20,7 @@
 | **Command** | `tars` |
 | **Platform** | macOS - Apple Silicon + Intel |
 | **Stack** | Go · Bubble Tea · Lip Gloss · SQLite |
-| **License** | [MIT](LICENSE) |
+| **License** | [MIT](#license) |
 | **Min macOS** | macOS 13 Ventura+ |
 | **Cost** | Free, forever |
 | **Status** | Phase 0 complete — prototype next |
@@ -66,6 +66,33 @@
 ## Out of Scope
 
 Windows/Linux · antivirus · general app uninstaller · health scores · automatic deletion · mandatory background services · mandatory AI or cloud
+
+---
+
+## License
+
+TARS is licensed under the **MIT License**. Unless a file states otherwise, this applies to the project's original source code, documentation, and assets.
+
+The MIT License permits you to:
+
+- Use TARS for personal, commercial, academic, or other purposes.
+- Copy, modify, merge, publish, distribute, sublicense, and sell copies.
+- Include TARS source code in other open-source or proprietary projects.
+
+When redistributing TARS or a substantial portion of its source, you must preserve the MIT copyright notice and permission notice. TARS is provided **without warranty**; the authors and copyright holders are not liable for claims, damages, or other liability arising from its use.
+
+Third-party software retains its own license. Release builds and source distributions will preserve required notices and attribution. Planned or evaluated components currently include:
+
+- Bubble Tea, Lip Gloss, Bubbles, and llama.cpp — MIT licensed.
+- `golang.org/x/sys` and Fyne — BSD 3-Clause licensed.
+- Ebitengine — Apache License 2.0, if adopted for an optional graphical renderer.
+- SQLite — public domain, although a selected Go SQLite driver may have separate terms.
+
+Optional AI model weights are separate artifacts and are **not automatically covered by TARS's MIT License**. A model will be distributed only after its license, redistribution rights, attribution requirements, and usage restrictions have been reviewed and documented.
+
+The complete `LICENSE` file and any required third-party notice files must be added before a public source or binary release. If this README conflicts with those legal files, the legal files control.
+
+TARS is an independent open-source project inspired by the fictional robot from *Interstellar*. It is not affiliated with or endorsed by the film's creators, studios, or rights holders.
 
 ---
 
